@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rev Up Your Ride</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<!-- Appointment Page -->
+<div class="container" style="background-image: url('C:\Users\user\Downloads\oil-change.jpg');">
+  <h2>Appointment</h2>
+  <form action="confirmation.html" method="post">
+    <label for="CustomerId">Cuctomer Id:</label>
+    <input type="text" id="Customer Id" name="customer id " required>
+
+<label for="vehicleId">Vehicle Id:</label>
+    <input type="text" id="vehicleId" name="vehicleId" required>
+
+<label for="serviceId">Service Id:</label>
+    <input type="text" id="serviceId" name="serviceId" required>
+
+    <label for="appointmentDate">Appointment Date:</label>
+    <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+<label for="appointmentTime">Appointment Time:</label>
+    <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+    <button type="submit">Confirm Appointment</button>
+  </form>
+</div>
+</body>
+</html>

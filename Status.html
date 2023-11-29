@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rev Up Your Ride</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #status-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #startServiceButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #startServiceButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="status-container">
+        <p id="status">Car service status will be displayed here.</p>
+    </div>
+
+    <button id="startServiceButton" onclick="startService()">Start Car Service</button>
+
+    <script>
+        function startService() {
+            // Perform actions to rev up the car service
+            document.getElementById("status").innerText = "Car service in progress...";
+        }
+    </script>
+
+</body>
+</html>
+
+
